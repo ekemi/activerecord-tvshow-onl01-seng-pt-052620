@@ -10,6 +10,6 @@ def Show::lowest_rating
   Show.minimum(:rating)
 end
 def Show::least_popular_show
-  Show.order(rating : :asc).first
+  Show.order(rating: :asc).first
 end
 end
