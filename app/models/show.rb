@@ -16,6 +16,6 @@ def Show::ratings_sum
   Show.sum(:rating)
 end
 def Show::popular_shows
-  Show.order(rating: :asc).fourth
+  Show.where("rating: >5").fourth
 end
 end
