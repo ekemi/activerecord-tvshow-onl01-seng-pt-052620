@@ -18,4 +18,7 @@ end
 def Show::popular_shows
   Show.where("rating >5")
 end
+def Show::shows_by_alphabetical_order
+  Show.order(name: :desc)
+end
 end
