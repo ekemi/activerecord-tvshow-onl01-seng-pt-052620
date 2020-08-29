@@ -4,6 +4,6 @@ def Show::highest_rating
   Show.maximum(:rating)
 end
 def Show::most_popular_show
-  show.maximum(:rating)
+  Show.maximum(:rating)
 end
 end
